@@ -1,22 +1,21 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ES6",
-    "baseUrl": "./",
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
     "outDir": "./dist",
-    "types": ["node", "mocha", "koa"],
-    "allowJs": true,
-    "esModuleInterop": true,
-    "strict": true,
+    "baseUrl": "./",
+    "incremental": true,
     "skipLibCheck": true,
-    "experimentalDecorators": true
-  },
-  "include": [
-    "src/**/*",
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    ".eslintrc.js"
-  ]
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
 }

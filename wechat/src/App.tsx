@@ -64,12 +64,12 @@ function App(): JSX.Element {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
+        {/* <Header /> */}
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
+          {/* <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
@@ -82,7 +82,7 @@ function App(): JSX.Element {
           <Section title="Learn More">
             Read the docs to discover what to do next:
           </Section>
-          <LearnMoreLinks />
+          <LearnMoreLinks /> */}
         </View>
       </ScrollView>
     </SafeAreaView>
