@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
+    "module": "ES6",
     "baseUrl": "./",
     "outDir": "./dist",
-    "types": [],
+    "types": ["node", "mocha", "koa"],
     "allowJs": true,
     "esModuleInterop": true,
     "strict": true,
@@ -12,10 +12,11 @@
     "experimentalDecorators": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    ".eslintrc.js"
   ]
 }

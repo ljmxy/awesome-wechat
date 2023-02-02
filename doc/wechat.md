@@ -1,3 +1,8 @@
 # Wechat Client Document
 
-//TODO: unit test, code organization, why choose rnel ui(quick dev, theme switch etc...)
+//TODO: unit test, code organization
+
+- React Native Element(UI)
+- React Query
+- i18next
+- Redux Toolkit
