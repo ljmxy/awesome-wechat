@@ -1,9 +1,8 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { RootState } from '../../redux/store';
+import {createSlice} from '@reduxjs/toolkit';
 
 // Define a type for the slice state
 interface EntryState {
-  currentLanguage: string,
+  currentLanguage: string;
 }
 
 // Define the initial state using that type
@@ -14,8 +13,7 @@ const initialState: EntryState = {
 export const entrySlice = createSlice({
   name: 'entry',
   initialState,
-  reducers: {
-  },
+  reducers: {},
 });
 
 // export const { } = entrySlice.actions;

@@ -1,0 +1,16 @@
+{
+  "base": {
+    "appTitle": "小微"
+  },
+  "register": {
+    "signIn": {
+      "title": "登陆"
+    },
+    "signOut": {
+      "title": "退出登陆"
+    },
+    "signUp": {
+      "title": "注册"
+    }
+  }
+}

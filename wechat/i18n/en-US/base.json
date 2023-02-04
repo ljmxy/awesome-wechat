@@ -1,0 +1,47 @@
+{
+  "base": {
+    "appTitle": "Awesome WeChat",
+    "loading": "loading"
+  },
+  "register": {
+    "tabTitle": "Register",
+    "signIn": {
+      "title": "Sign In",
+      "usernamePlaceholder": "username",
+      "passwordPlaceholder": "password",
+      "signInButton": "Sign In",
+      "invalidUsernameError": "Please enter a valid username here",
+      "invalidPasswordError": "Please enter a valid password here"
+    },
+    "signOut": {
+      "title": "Sign Out"
+    },
+    "signUp": {
+      "title": "Sign Up"
+    }
+  },
+  "conversation": {
+    "tabTitle": "Conversations",
+    "conversations": {
+      "title": "Conversations"
+    },
+    "conversationDetail": {
+      "title": "Conversation Detail"
+    }
+  },
+  "contact": {
+    "tabTitle": "Contacts",
+    "contacts": {
+      "title": "Contacts"
+    },
+    "contactDetail": {
+      "title": "Contact Detail"
+    }
+  },
+  "setting": {
+    "tabTitle": "Settings",
+    "settings": {
+      "title": "Settings"
+    }
+  }
+}

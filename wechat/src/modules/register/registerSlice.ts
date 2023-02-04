@@ -1,37 +1,34 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { RootState } from '../../redux/store';
+import {createSlice} from '@reduxjs/toolkit';
+import {signIn} from './registerActions';
 
 // Define a type for the slice state
 interface RegisterState {
-
+  isSignIn: boolean;
+  username: string | undefined;
 }
 
 // Define the initial state using that type
 const initialState: RegisterState = {
-
+  isSignIn: false,
+  username: undefined,
 };
 
 export const registerSlice = createSlice({
   name: 'register',
-  // `createSlice` will infer the state type from the `initialState` argument
   initialState,
-  reducers: {
-    // increment: state => {
-    //   state.value += 1
-    // },
-    // decrement: state => {
-    //   state.value -= 1
-    // },
-    // // Use the PayloadAction type to declare the contents of `action.payload`
-    // incrementByAmount: (state, action: PayloadAction<number>) => {
-    //   state.value += action.payload
-    // }
+  reducers: {},
+  extraReducers(builder) {
+    builder
+      .addCase(signIn.fulfilled, (state: RegisterState, {payload}) => {
+        console.log('signIn 🚀 ~ fulfilled', payload);
+        state.isSignIn = true;
+      })
+      .addCase(signIn.rejected, () => {
+        throw new Error('signIn 🔥 ~ rejected');
+      });
   },
 });
 
-// export const { increment, decrement, incrementByAmount } = registerSlice.actions;
-
-// Other code such as selectors can use the imported `RootState` type
-// export const selectCount = (state: RootState) => state.counter.value
+// export const {afterSignIn} = registerSlice.actions;
 
 export default registerSlice.reducer;
